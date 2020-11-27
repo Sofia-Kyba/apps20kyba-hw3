@@ -1,7 +1,7 @@
 package ua.edu.ucu.smartarr;
 
 // Remove duplicates from SmartArray. Use method equals() to compare objects
-public class DistinctDecorator extends SmartArrayDecorator{
+public class DistinctDecorator extends SmartArrayDecorator {
 
     private int size;
 
@@ -18,8 +18,8 @@ public class DistinctDecorator extends SmartArrayDecorator{
 
     @Override
     public String operationDescription() {
-        return "Deletes duplicates comparing" +
-                " elements with operation equals()";
+        return "Deletes duplicates comparing"
+            + " elements with operation equals()";
     }
 
     @Override
@@ -37,7 +37,7 @@ public class DistinctDecorator extends SmartArrayDecorator{
             for (int j = i + 1; j < newArray.length; j++) {
                 if (array[i].toString().equals(array[j].toString())) {
                     newArray[j] = null;
-                    counter ++;
+                    counter++;
                 }
             }
         }
@@ -49,7 +49,7 @@ public class DistinctDecorator extends SmartArrayDecorator{
         for (int k = 0; k < newArray.length; k++) {
             if (newArray[k] != null){
                 result[ind] = newArray[k];
-                ind ++;
+                ind++;
             }
         }
 
