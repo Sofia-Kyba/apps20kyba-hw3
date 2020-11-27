@@ -1,6 +1,9 @@
 package ua.edu.ucu;
 
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
 class Student {
 
     private double GPA;
@@ -33,7 +36,8 @@ class Student {
 
     @Override
     public String toString() {
-        return "Student{name=" + name + ", surname=" + surname + ", " + "GPA=" + GPA + ", year=" + year + '}';
+        return "Student{name=" + name + ", surname=" + surname + ", "
+                + "GPA=" + GPA + ", year=" + year + '}';
     }
 
 }

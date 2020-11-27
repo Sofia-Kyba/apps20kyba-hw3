@@ -31,7 +31,7 @@ public class SmartArrayAppTest {
             new Student("Tomasz", "Borek", 4.1, 2),
             new Student("Ittai", "Zeidman", 4.5, 1),
             new Student("Burr", "Sutter", 4.2, 2)};
-        String[] studentNames = 
+        String[] studentNames =
                 SmartArrayApp.findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname(students);
         String[] expectedStudentNames = {"Borek Tomasz", "Kranga Antons", "Sutter Burr"};
 
