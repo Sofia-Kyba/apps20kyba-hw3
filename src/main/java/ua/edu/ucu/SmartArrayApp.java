@@ -113,7 +113,6 @@ public class SmartArrayApp {
         studentSmartArray = new DistinctDecorator(studentSmartArray);
 
         Object[] result = studentSmartArray.toArray();
-        System.out.println(result.length);
         return Arrays.copyOf(result, result.length, String[].class);
     }
 }
