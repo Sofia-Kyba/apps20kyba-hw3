@@ -27,7 +27,7 @@ public class DistinctDecorator extends SmartArrayDecorator {
         return size;
     }
 
-    public Object [] deleteDuplicates(){
+    public Object [] deleteDuplicates() {
 
         Object [] array = smartArray.toArray();
         Object [] newArray = smartArray.toArray();
