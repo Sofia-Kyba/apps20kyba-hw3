@@ -75,8 +75,8 @@ public class SmartArrayApp {
                 this.st2 = (Student) o2;
 
                 int val = 0;
-                for (int i = 0; i < st1.getSurname().length(); i ++) {
-                    for (int j = 0; j < st2.getSurname().length(); j ++) {
+                for (int i = 0; i < st1.getSurname().length(); i++) {
+                    for (int j = 0; j < st2.getSurname().length(); j++) {
                         if (st1.getSurname().charAt(i)
                                 < st2.getSurname().charAt(i)){
                             val = -1;
@@ -101,7 +101,7 @@ public class SmartArrayApp {
             @Override
             public Object apply(Object t) {
                 this.st1 = (Student) t;
-                return st1.getSurname() + " "+ st1.getName();
+                return st1.getSurname() + " " + st1.getName();
             }
         };
 
