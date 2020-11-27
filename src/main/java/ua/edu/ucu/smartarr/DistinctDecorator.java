@@ -47,7 +47,7 @@ public class DistinctDecorator extends SmartArrayDecorator {
         Object [] result = new Object[array.length - counter];
 
         for (int k = 0; k < newArray.length; k++) {
-            if (newArray[k] != null){
+            if (newArray[k] != null) {
                 result[ind] = newArray[k];
                 ind++;
             }
