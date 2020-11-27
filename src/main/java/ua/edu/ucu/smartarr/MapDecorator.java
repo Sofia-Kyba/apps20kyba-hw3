@@ -3,7 +3,7 @@ package ua.edu.ucu.smartarr;
 import ua.edu.ucu.functions.MyFunction;
 
 // Map every element to another object using MyFunction
-public class MapDecorator extends SmartArrayDecorator{
+public class MapDecorator extends SmartArrayDecorator {
 
     private MyFunction function;
     private int size;
@@ -21,8 +21,8 @@ public class MapDecorator extends SmartArrayDecorator{
 
     @Override
     public String operationDescription() {
-        return "Expresses each element of SmartArray" +
-                " into another object using MyFunction";
+        return "Expresses each element of SmartArray"
+            + " into another object using MyFunction";
     }
 
     @Override
