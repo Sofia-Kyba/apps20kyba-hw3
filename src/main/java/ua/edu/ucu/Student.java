@@ -1,9 +1,5 @@
 package ua.edu.ucu;
 
-
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-
 class Student {
 
     private double GPA;
