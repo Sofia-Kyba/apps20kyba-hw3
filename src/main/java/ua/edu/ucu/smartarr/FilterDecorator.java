@@ -21,9 +21,9 @@ public class FilterDecorator extends SmartArrayDecorator {
 
     @Override
     public String operationDescription() {
-        return "Deletes elements that doesn't fit" +
-                " predicate's conditions. The function" +
-                " test() is used.";
+        return "Deletes elements that doesn't fit"
+            + " predicate's conditions. The function"
+            + " test() is used.";
     }
 
     @Override
@@ -38,7 +38,7 @@ public class FilterDecorator extends SmartArrayDecorator {
         for (int i = 0; i < array.length; i++) {
             if (!predicate.test(array[i])) {
                 array[i] = null;
-                counter ++;
+                counter++;
             }
         }
 
@@ -47,7 +47,7 @@ public class FilterDecorator extends SmartArrayDecorator {
         for (int j = 0; j < array.length; j++) {
             if (array[j] != null) {
                 result[ind] = array[j];
-                ind ++;
+                ind++;
             }
         }
 
